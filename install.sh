@@ -8,10 +8,13 @@ apk add --no-cache --virtual .build-deps
 apk add curl bash gnupg
 
 # Adding nodejs
-apk add nodejs 
+apk add nodejs npm
 
 # install yarn
 apk add yarn
+
+# install git
+apk add git
 
 # Install aws cli dependency python 
 apk add python py-pip openssl ca-certificates
@@ -24,6 +27,3 @@ unzip awscli-bundle.zip
 #rm cach
 apk --purge -v del py-pip
 rm /var/cache/apk/*
-
-
-
