@@ -1,6 +1,9 @@
 # General alpine linux updated
 apk update
 
+#install python 
+apk add python3
+
 # Install virtual package list 
 apk add --no-cache --virtual .build-deps
 
