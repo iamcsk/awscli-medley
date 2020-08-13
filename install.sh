@@ -22,6 +22,9 @@ apk add git
 # Install aws cli dependency python 
 apk add python py-pip openssl ca-certificates
 
+# link python3.8 to python
+ln -s /usr/bin/python3.8 /usr/bin/python
+
 # install aws cli 
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
